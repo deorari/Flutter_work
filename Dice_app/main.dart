@@ -19,20 +19,19 @@ void main() {
 //WE OUR CHANGING OUR WIDGET TO STATEFUL WIDGET
 /*class DicePage extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {     //agar row k andr k content ko center mai laana h page k so return Center () k bracket k andr row ka code daal do pura
-    return Center(
-      child: Row(                           //par ye bht messy hojaega so here is shortcut ie row pr click kro and then flutter
-                                            // outline pr wha jo sabse phle widget aara h center kr k usme click kro and automatically saara code center widget k andr aajaega
+  Widget build(BuildContext context) {        
+  return Center(
+      child: Row(                           
+                                            
         children:<Widget>[
           Expanded(child: FlatButton(onPressed: (){
             print('left button pressed');
           },
-            child: Image.asset('images/dice1.png'),),),    //by default flex 1 hota h agr hum mention na kare toh, flex bas ratio deta h row column mai
+            child: Image.asset('images/dice1.png'),),),   
           Expanded(child: FlatButton(onPressed: (){
             print('right button pressed');
           },
-            child: Image.asset('images/dice2.png'),),),    //flatbutton mai khud padding h 16 px ki so humne jo external paddingdiya tha padding widget se usko remove krdenge hum
-        ]
+            child: Image.asset('images/dice2.png'),),),           ]
       ),
     );
   }
@@ -55,19 +54,18 @@ class _DicePageState extends State<DicePage> {
 
   }
   @override
-  Widget build(BuildContext context) {     //agar row k andr k content ko center mai laana h page k so return Center () k bracket k andr row ka code daal do pura
+  Widget build(BuildContext context) {     
     return Center(
-      child: Row(                           //par ye bht messy hojaega so here is shortcut ie row pr click kro and then flutter
-        // outline pr wha jo sabse phle widget aara h center kr k usme click kro and automatically saara code center widget k andr aajaega
+      child: Row(                          
           children:<Widget>[
             Expanded(child: FlatButton(onPressed: () {
                 onclick();
             },
-              child: Image.asset('images/dice$leftDiceNumber.png'),),),    //by default flex 1 hota h agr hum mention na kare toh, flex bas ratio deta h row column mai
+              child: Image.asset('images/dice$leftDiceNumber.png'),),),    
             Expanded(child: FlatButton(onPressed: (){
               onclick();
             },
-              child: Image.asset('images/dice$rightDiceNumber.png'),),),    //flatbutton mai khud padding h 16 px ki so humne jo external paddingdiya tha padding widget se usko remove krdenge hum
+              child: Image.asset('images/dice$rightDiceNumber.png'),),),    
           ]
       ),
     );
